@@ -15,7 +15,7 @@ typedef struct {
 void inicializarLista(ListaAeronaves *lista);
 
 // Adiciona uma aeronave à lista via terminal (status padrão: aguardando)
-int addAircraft(ListaAeronaves *lista);
+int addAeronave(ListaAeronaves *lista);
 
 // Altera o status de uma aeronave pelo ID
 // status: 0 = voando, 1 = pousando, 2 = aguardando
