@@ -14,7 +14,17 @@ aeronave criar\aeronave(int id,float,char código[],float x,float y,float altitu
 void imprimirAeronave(Aeronave a) { 
   printf("ID: %d\n" a.id); //mostra o id da aeronave
   printf("codigo: %s\n" a.codigo_voo); // mostra o código do voo
-  printf("Posição: %2.f %2.f\n" , a.x a.y); //mostra a posição x e y
+  printf("Posição: ("%2.f, %2.f)\n" , a.x a.y); //mostra a posição x e y
+  printf("Altitude: %2.f \n", a.altitude); // mostra a altitude
+
+  // função para atualizar a posição da aeronave
+  void atualizarPosicao(Aeronave *a,float novoX,float novoY);{
+    a->x = novoX; // altera a posição X
+    a->Y = novoY; // altera a posição Y 
+  }
+  // altualiza a altitude 
+  void atualizarAltitude(Aeronave *a,float novaAltitude); {
+    a->altitude = novaAltitude; // muda a altitude
   
 
 }
