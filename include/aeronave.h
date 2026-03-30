@@ -17,5 +17,7 @@ typedef struct {
 // Protótipos das funções
 Aeronave criarAeronave(int id, char codigo[], float x, float y, float altitude, float velocidade, int status);
 void exibirAeronave(Aeronave a);
+void moverAeronave(Aeronave *a,float deltaX,float deltaY);// move a aeronave para os eixos 
+//x e y
 
 #endif // AERONAVE_H
