@@ -14,7 +14,7 @@ typedef struct {
 void inicializarLista(ListaAeronaves *lista);
 int addAeronave(ListaAeronaves *lista);
 int alterarStatusAeronave(ListaAeronaves *lista, int id, int novoStatus);
-int findAeronave(Aeronave lista[], int tamanho, char callsign[]);
+int findAeronave(ListaAeronaves *lista, char callsign[]);
 void listarAeronaves(ListaAeronaves *lista);
 int removerAeronave(ListaAeronaves *lista, int id);
 
