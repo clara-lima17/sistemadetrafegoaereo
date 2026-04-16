@@ -52,10 +52,10 @@ int alterarStatusAeronave(ListaAeronaves *lista, int id, int novoStatus) {
     return 0;
 }
 
-int findAeronave(Aeronave lista[], int tamanho, char callsign[]) {
+int findAeronave(ListaAeronaves *lista, char callsign[]) {
     int i;
-    for (i = 0; i < tamanho; i++) {
-        if (strcmp(lista[i].codigo_voo, callsign) == 0) {
+    for (i = 0; i < lista->contador; i++) {
+        if (strcmp(lista->aeronaves[i].codigo_voo, callsign) == 0) {
             return i;
         }
     }
